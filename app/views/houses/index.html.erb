@@ -1,0 +1,16 @@
+
+<%= render "new_form" %>
+
+
+<% unless @house.nil? %>
+   <table>
+   	<% @house.each do |house| %>
+   	<tr>
+   		<td><%= house.hno%></td>
+   		<td><%= house.harea%></td>
+   		<td><%= link_to "Delete", house_path(house), :confirm => "Are you sure?", :method => :delete %>
+   		</td>
+   	</tr>
+   	<%end%>
+   </table>
+<%end%>

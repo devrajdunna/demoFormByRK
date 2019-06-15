@@ -1,0 +1,8 @@
+<%= render "new_form" %>
+House Text
+<hr>
+<%= form_for @house do |f| -%>
+House No : <%= f.text_field :hno %> </br>
+House area :<%= f.text_field :harea %>
+<%= f.submit class: "btn btn-success" %>
+<% end -%>

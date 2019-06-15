@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hno: 1
+  harea: MyString
+
+two:
+  hno: 1
+  harea: MyString
